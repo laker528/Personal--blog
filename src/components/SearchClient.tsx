@@ -93,7 +93,7 @@ export default function SearchClient({ posts }: SearchClientProps) {
               找到 {filteredPosts.length} 篇相关文章
               {query && (
                 <span className="ml-2">
-                  关键词: <span className="font-medium">'{query}'</span>
+                  关键词: <span className="font-medium">{`"${query}"`}</span>
                 </span>
               )}
             </p>
